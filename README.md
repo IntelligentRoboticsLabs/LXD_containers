@@ -56,6 +56,6 @@ Common LXD IntelligentRoboticsLab's containers.
 
 
 ## Image list
-- [Ubuntu 20.04 ROS2 Foxy](https://urjc-my.sharepoint.com/:u:/g/personal/jonatan_gines_urjc_es/EfwgRp0QtkNMjen8-q8CQ2EBp7d8cwruDN5MChvfZoXV7w?e=y2QMlj)
+- [Ubuntu 20.04 ROS2 Foxy](https://urjc-my.sharepoint.com/:u:/g/personal/jonatan_gines_urjc_es/EeZaYss1yhVJnrA9-BaBVzIBnomDGFDW4gThZ6iRO6Z8lQ?e=mDmDSy)
 - [ROS Bridges - Foxy](https://urjc-my.sharepoint.com/:u:/g/personal/jonatan_gines_urjc_es/EfwgRp0QtkNMjen8-q8CQ2EBp7d8cwruDN5MChvfZoXV7w?e=y2QMlj)
 - [Websites](https://github.com/ACTROS-Educational-Project/actros-educational-project.github.io/releases/download/lxc/080200225a7d601f0302aeeb998b06d7f8eb4b150ccb4c32c42526005ed75b98.tar.gz)
