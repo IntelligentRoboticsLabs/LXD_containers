@@ -12,16 +12,8 @@ Common LXD IntelligentRoboticsLab's containers.
 * Shell: `lxc exec [cont-name] -- su --login ubuntu`
 * Share a directory: `lxc config device add [cont-name] shareddir1 disk path=/root/[dest_dir] source=/home/[username]/[origin_dir]`
 * Rm a shared directory: `lxc config device remove [cont-name] shareddir1`
-* Default network config:
-  <pre><code> devices:
-    eth0:
-      name: eth0
-      nictype: bridged
-      parent: [network interface created in the initial process]
-      type: nic
-  </code></pre>
   
-* Add TIAGo's network profile: 
+* Add TIAGo's network profile to your container: 
   <pre><code>
     lxc profile create macvlan
     lxc profile edit macvlan
@@ -53,7 +45,15 @@ Common LXD IntelligentRoboticsLab's containers.
    </code></pre>
    Add the profile to the container:
    <pre><code>lxc profile add [cont-name] macvlan </code></pre>
-
+   
+* Default network config:
+  <pre><code> devices:
+    eth0:
+      name: eth0
+      nictype: bridged
+      parent: [network interface created in the initial process]
+      type: nic
+  </code></pre>
 
 ## Image list
 - [Ubuntu 20.04 ROS2 Foxy](https://urjc-my.sharepoint.com/:u:/g/personal/jonatan_gines_urjc_es/EeZaYss1yhVJnrA9-BaBVzIBnomDGFDW4gThZ6iRO6Z8lQ?e=mDmDSy)
