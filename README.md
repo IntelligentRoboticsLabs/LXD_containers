@@ -41,7 +41,7 @@ Common LXD IntelligentRoboticsLab's containers.
        pool: default
        type: disk
    name: macvlan
-    used_by:
+   used_by:
    </code></pre>
    Add the profile to the container:
    <pre><code>lxc profile add [cont-name] macvlan </code></pre>
