@@ -22,13 +22,13 @@ Common LXD IntelligentRoboticsLab's containers.
    <pre><code>
     config:
       user.network-config: |
-      version: 1
-      config:
-        - type: physical
-          name: eth0
-          subnets:
-            - type: dhcp
-              ipv4: true
+        version: 1
+        config:
+          - type: physical
+            name: eth0
+            subnets:
+              - type: dhcp
+                ipv4: true
     description: LXD profile with LAN connection
     devices:
       eth0:
