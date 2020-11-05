@@ -20,27 +20,27 @@ Common LXD IntelligentRoboticsLab's containers.
    </code></pre> 
    Paste the following:
    <pre><code>
-    config:
-      user.network-config: |
-        version: 1
-        config:
-          - type: physical
-            name: eth0
-            subnets:
-              - type: dhcp
-                ipv4: true
-    description: LXD profile with LAN connection
-    devices:
-      eth0:
-        name: eth0
-        nictype: macvlan
-        parent: [eth-name]
-        type: nic
-      root:
-        path: /
-        pool: default
-        type: disk
-    name: macvlan
+   config:
+     user.network-config: |
+       version: 1
+         config:
+           - type: physical
+             name: eth0
+             subnets:
+               - type: dhcp
+                 ipv4: true
+   description: LXD profile with LAN connection
+   devices:
+     eth0:
+       name: eth0
+       nictype: macvlan
+       parent: [eth-name]
+       type: nic
+     root:
+       path: /
+       pool: default
+       type: disk
+   name: macvlan
     used_by:
    </code></pre>
    Add the profile to the container:
