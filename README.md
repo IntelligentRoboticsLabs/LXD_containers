@@ -12,7 +12,7 @@ Common LXD IntelligentRoboticsLab's containers.
 * Shell: `lxc exec [cont-name] -- su --login ubuntu`
 * Share a directory: `lxc config device add [cont-name] shareddir1 disk path=/root/[dest_dir] source=/home/[username]/[origin_dir]`
 * Rm a shared directory: `lxc config device remove [cont-name] shareddir1`
-  
+* Clone a container: `lxc copy [source-cont] [target-cont]`
 * Add TIAGo's network profile to your container: 
   <pre><code>
     lxc profile create macvlan
@@ -57,5 +57,6 @@ Common LXD IntelligentRoboticsLab's containers.
 
 ## Image list
 - [Ubuntu 20.04 ROS2 Foxy](https://urjc-my.sharepoint.com/:u:/g/personal/jonatan_gines_urjc_es/EeZaYss1yhVJnrA9-BaBVzIBnomDGFDW4gThZ6iRO6Z8lQ?e=mDmDSy)
+- [ROS2 - Follow Dynamic point - TIAGo](https://urjc-my.sharepoint.com/:u:/g/personal/jonatan_gines_urjc_es/Eem3XJ8kS2JOp3JG2jNJwg0BKOGKpXVghTOqpZZwNHPsOg?e=EBDB5t)
 - [ROS Bridges - Foxy](https://urjc-my.sharepoint.com/:u:/g/personal/jonatan_gines_urjc_es/EfwgRp0QtkNMjen8-q8CQ2EBp7d8cwruDN5MChvfZoXV7w?e=y2QMlj)
 - [Websites](https://github.com/ACTROS-Educational-Project/actros-educational-project.github.io/releases/download/lxc/080200225a7d601f0302aeeb998b06d7f8eb4b150ccb4c32c42526005ed75b98.tar.gz)
