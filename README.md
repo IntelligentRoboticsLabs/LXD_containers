@@ -13,6 +13,7 @@ Common LXD IntelligentRoboticsLab's containers.
 * Share a directory: `lxc config device add [cont-name] shareddir1 disk path=/root/[dest_dir] source=/home/[username]/[origin_dir]`
 * Rm a shared directory: `lxc config device remove [cont-name] shareddir1`
 * Clone a container: `lxc copy [source-cont] [target-cont]`
+* Connection through ssh (Permission denied (publickey)): https://www.digitalocean.com/community/questions/error-permission-denied-publickey-when-i-try-to-ssh 
 * Add TIAGo's network profile to your container: 
   <pre><code>
     lxc profile create macvlan
